@@ -21,6 +21,10 @@ public:
 	bool operator!=(const Playlist& rhs) const;
 	bool operator<=(const Playlist& rhs) const;
 	bool operator>=(const Playlist& rhs) const;
+	Playlist& operator+=(const Playlist& rhs);
+	Playlist& operator-=(const Playlist& rhs);
+	Playlist operator+(const Playlist& rhs) const;
+	Playlist operator-(const Playlist& rhs) const;
 
 private:
 	vector <Song> songs;
